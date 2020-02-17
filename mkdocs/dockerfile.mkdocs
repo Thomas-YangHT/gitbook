@@ -1,0 +1,36 @@
+FROM alpine:3.10
+#RUN echo  'http://mirrors.ustc.edu.cn/alpine/v3.10/main'> /etc/apk/repositories && \
+#echo  'http://mirrors.ustc.edu.cn/alpine/v3.10/community' >>/etc/apk/repositories && \
+RUN  uname -a && \
+echo  'http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.10/main'> /etc/apk/repositories && \
+echo  'http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.10/community' >>/etc/apk/repositories && \
+cat /etc/apk/repositories && \
+apk update && \
+apk add  python3 tzdata curl && \
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+mkdir ~/.pip && \ 
+echo [global] >~/.pip/pip.conf && \
+echo index-url = https://pypi.tuna.tsinghua.edu.cn/simple >>~/.pip/pip.conf && \
+echo [install] >>~/.pip/pip.conf && \
+echo trusted-host = https://pypi.tuna.tsinghua.edu.cn >>~/.pip/pip.conf && \
+pip3 install mkdocs
+ENV  Pjname=linuxcommand
+RUN mkdocs new $Pjname && \
+cd $Pjname && \
+echo site_name: mkDocs >./mkdocs.yml && \
+echo nav:   >>./mkdocs.yml  && \
+echo "  - Home: index.md " >>./mkdocs.yml && \
+echo "  - About: about.md" >>./mkdocs.yml && \
+echo "theme: readthedocs " >>./mkdocs.yml && \
+echo "site/" >> .gitignore
+WORKDIR $Pjname
+COPY . /$Pjname
+#改中文名编码
+RUN find docs/clusters/*md |awk '{print "cp "$0" `echo "$0"| iconv -f gbk -t utf-8` && rm -f "$0}'|sh && \
+mkdocs build --clean && ls -l
+CMD ["mkdocs","serve","-a","0.0.0.0:8000"]
+FROM nginx:alpine
+ENV  Pjname=linuxcommand
+WORKDIR /usr/share/nginx/html
+COPY --from=0 /$Pjname/site .
+

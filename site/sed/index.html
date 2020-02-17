@@ -1,0 +1,3204 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Sed - linux-command</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Sed";
+    var mkdocs_page_input_path = "sed.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> linux-command</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ab/">Ab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../accept/">Accept</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ack/">Ack</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../alias/">Alias</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../apachectl/">Apachectl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../apk/">Apk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../apropos/">Apropos</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../apt-get/">Apt get</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../aptitude/">Aptitude</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../apt-key/">Apt key</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../apt-sortpkgs/">Apt sortpkgs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arch/">Arch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arj/">Arj</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ar/">Ar</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arpd/">Arpd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arping/">Arping</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arp/">Arp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arptables/">Arptables</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arpwatch/">Arpwatch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../as/">As</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../at/">At</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../atop/">Atop</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../atq/">Atq</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../atrm/">Atrm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awk/">Awk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../axel/">Axel</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../badblocks/">Badblocks</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../basename/">Basename</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../batch/">Batch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bc/">Bc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bg/">Bg</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bind/">Bind</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../blkid/">Blkid</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../blockdev/">Blockdev</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bmodinfo/">Bmodinfo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../builtin/">Builtin</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bunzip2/">Bunzip2</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bye/">Bye</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzcat/">Bzcat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzcmp/">Bzcmp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzdiff/">Bzdiff</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzgrep/">Bzgrep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzip2/">Bzip2</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzip2recover/">Bzip2recover</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzless/">Bzless</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bzmore/">Bzmore</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cal/">Cal</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cancel/">Cancel</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cat/">Cat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cd/">Cd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cdrecord/">Cdrecord</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chage/">Chage</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chattr/">Chattr</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chcon/">Chcon</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chfn/">Chfn</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chgrp/">Chgrp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chkconfig/">Chkconfig</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chmod/">Chmod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chown/">Chown</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chpasswd/">Chpasswd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chroot/">Chroot</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../chsh/">Chsh</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cksum/">Cksum</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../clear/">Clear</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../clockdiff/">Clockdiff</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../clock/">Clock</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cmp/">Cmp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../col/">Col</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../colrm/">Colrm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../command/">Command</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../comm/">Comm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../compress/">Compress</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../consoletype/">Consoletype</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../convertquota/">Convertquota</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cpio/">Cpio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cp/">Cp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../crontab/">Crontab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../csplit/">Csplit</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cu/">Cu</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cupsdisable/">Cupsdisable</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cupsenable/">Cupsenable</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../curl/">Curl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cut/">Cut</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../date/">Date</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dd/">Dd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../declare/">Declare</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../depmod/">Depmod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../df/">Df</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dhclient/">Dhclient</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dhcpd/">Dhcpd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dhcrelay/">Dhcrelay</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../diff3/">Diff3</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../diff/">Diff</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../diffstat/">Diffstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dig/">Dig</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dircolors/">Dircolors</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dirname/">Dirname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dirs/">Dirs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dmesg/">Dmesg</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dmidecode/">Dmidecode</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dnf/">Dnf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dnsdomainname/">Dnsdomainname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../domainname/">Domainname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dos2unix/">Dos2unix</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-deb/">Dpkg deb</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-divert/">Dpkg divert</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg/">Dpkg</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-preconfigure/">Dpkg preconfigure</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-query/">Dpkg query</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-reconfigure/">Dpkg reconfigure</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-split/">Dpkg split</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-statoverride/">Dpkg statoverride</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dpkg-trigger/">Dpkg trigger</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dris/">Dris</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dstat/">Dstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../du/">Du</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dump/">Dump</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../e2fsck/">E2fsck</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../e2label/">E2label</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../echo/">Echo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ed/">Ed</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../edquota/">Edquota</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../egrep/">Egrep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../eject/">Eject</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../elinks/">Elinks</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../elm/">Elm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../emacs/">Emacs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../enable/">Enable</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../env/">Env</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ethtool/">Ethtool</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../exec/">Exec</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../exit/">Exit</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ex/">Ex</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../expand/">Expand</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../exportfs/">Exportfs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../export/">Export</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../expr/">Expr</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fc/">Fc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fdisk/">Fdisk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fg/">Fg</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fgrep/">Fgrep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../file/">File</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../findfs/">Findfs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../find/">Find</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../finger/">Finger</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../firewall-cmd/">Firewall cmd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fishshell/">Fishshell</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fmt/">Fmt</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fold/">Fold</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../free/">Free</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fsck/">Fsck</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ftpcount/">Ftpcount</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ftp/">Ftp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ftpshut/">Ftpshut</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ftptop/">Ftptop</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ftpwho/">Ftpwho</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../fuser/">Fuser</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gcc/">Gcc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gcov/">Gcov</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gdb/">Gdb</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getenforce/">Getenforce</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get_module/">Get module</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getsebool/">Getsebool</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gpasswd/">Gpasswd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gpm/">Gpm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../grep/">Grep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../groupadd/">Groupadd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../groupdel/">Groupdel</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../groupmod/">Groupmod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../groups/">Groups</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../grpck/">Grpck</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../grpconv/">Grpconv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../grpunconv/">Grpunconv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../grub/">Grub</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gunzip/">Gunzip</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gzexe/">Gzexe</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gzip/">Gzip</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../halt/">Halt</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../hdparm/">Hdparm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../head/">Head</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../help/">Help</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../hexdump/">Hexdump</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../history/">History</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../hostid/">Hostid</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../host/">Host</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../hostname/">Hostname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../hping3/">Hping3</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../htdigest/">Htdigest</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../htop/">Htop</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../htpasswd/">Htpasswd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../hwclock/">Hwclock</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iconv/">Iconv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../id/">Id</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ifcfg/">Ifcfg</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ifconfig/">Ifconfig</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ifdown/">Ifdown</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ifstat/">Ifstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iftop/">Iftop</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ifup/">Ifup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../indent/">Indent</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../info/">Info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../init/">Init</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../inotifywait/">Inotifywait</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../insmod/">Insmod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../install/">Install</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iostat/">Iostat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iotop/">Iotop</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ip6tables/">Ip6tables</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ip6tables-restore/">Ip6tables restore</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ip6tables-save/">Ip6tables save</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ipcalc/">Ipcalc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ipcrm/">Ipcrm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ipcs/">Ipcs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iperf/">Iperf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ip/">Ip</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iptables/">Iptables</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iptables-restore/">Iptables restore</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iptables-save/">Iptables save</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iptraf/">Iptraf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../iptstate/">Iptstate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ispell/">Ispell</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jed/">Jed</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jobs/">Jobs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../joe/">Joe</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../join/">Join</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jwhois/">Jwhois</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../kernelversion/">Kernelversion</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../kexec/">Kexec</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../killall/">Killall</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../kill/">Kill</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lastb/">Lastb</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lastlog/">Lastlog</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../last/">Last</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ldconfig/">Ldconfig</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ldd/">Ldd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ld/">Ld</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../less/">Less</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../let/">Let</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lftpget/">Lftpget</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lftp/">Lftp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lha/">Lha</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lilo/">Lilo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ln/">Ln</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lnstat/">Lnstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../locate/">Locate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../logger/">Logger</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../login/">Login</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../logname/">Logname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../logout/">Logout</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../logrotate/">Logrotate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../logsave/">Logsave</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../logwatch/">Logwatch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../look/">Look</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../losetup/">Losetup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lpadmin/">Lpadmin</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lpc/">Lpc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lp/">Lp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lpq/">Lpq</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lpr/">Lpr</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lprm/">Lprm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lpstat/">Lpstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lsattr/">Lsattr</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lsblk/">Lsblk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lsb_release/">Lsb release</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lscpu/">Lscpu</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ls/">Ls</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lsmod/">Lsmod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lsof/">Lsof</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lspci/">Lspci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lsusb/">Lsusb</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ltrace/">Ltrace</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvcreate/">Lvcreate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvdisplay/">Lvdisplay</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvextend/">Lvextend</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvreduce/">Lvreduce</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvremove/">Lvremove</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvresize/">Lvresize</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lvscan/">Lvscan</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lynx/">Lynx</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mail/">Mail</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mailq/">Mailq</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mailstat/">Mailstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../make/">Make</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../man/">Man</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../md5sum/">Md5sum</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mesg/">Mesg</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mii-tool/">Mii tool</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mkbootdisk/">Mkbootdisk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mkdir/">Mkdir</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mke2fs/">Mke2fs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mkfs/">Mkfs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mkinitrd/">Mkinitrd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mkisofs/">Mkisofs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mknod/">Mknod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mkswap/">Mkswap</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mktemp/">Mktemp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../modprobe/">Modprobe</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../more/">More</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mount/">Mount</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mpstat/">Mpstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mtools/">Mtools</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mv/">Mv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysqladmin/">Mysqladmin</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysqldump/">Mysqldump</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysqlimport/">Mysqlimport</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysql/">Mysql</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysqlshow/">Mysqlshow</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../named-checkzone/">Named checkzone</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nano/">Nano</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ncftp/">Ncftp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nc/">Nc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nethogs/">Nethogs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../netstat/">Netstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../newusers/">Newusers</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nfsstat/">Nfsstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ngrep/">Ngrep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nice/">Nice</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nisdomainname/">Nisdomainname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nl/">Nl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nmap/">Nmap</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nmcli/">Nmcli</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nm/">Nm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nohup/">Nohup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nologin/">Nologin</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../nslookup/">Nslookup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ntpdate/">Ntpdate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ntsysv/">Ntsysv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../objdump/">Objdump</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../od/">Od</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../openssl/">Openssl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../parted/">Parted</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../partprobe/">Partprobe</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../passwd/">Passwd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../paste/">Paste</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../patch/">Patch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pathchk/">Pathchk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../perl/">Perl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pfctl/">Pfctl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pgrep/">Pgrep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../php/">Php</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pico/">Pico</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pidof/">Pidof</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pigz/">Pigz</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ping/">Ping</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pkill/">Pkill</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pmap/">Pmap</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../popd/">Popd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../poweroff/">Poweroff</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ppp-off/">Ppp off</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../printf/">Printf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pr/">Pr</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../protoize/">Protoize</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ps/">Ps</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pssh/">Pssh</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pstack/">Pstack</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pstree/">Pstree</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pushd/">Pushd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvchange/">Pvchange</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvck/">Pvck</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvcreate/">Pvcreate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvdisplay/">Pvdisplay</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pv/">Pv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvremove/">Pvremove</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvscan/">Pvscan</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pvs/">Pvs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pwck/">Pwck</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pwconv/">Pwconv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pwd/">Pwd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pwunconv/">Pwunconv</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../quotacheck/">Quotacheck</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../quota/">Quota</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../quotaoff/">Quotaoff</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../quotaon/">Quotaon</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rcconf/">Rcconf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rcp/">Rcp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../readelf/">Readelf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../read/">Read</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../readonly/">Readonly</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../reboot/">Reboot</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../reject/">Reject</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rename/">Rename</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../renice/">Renice</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../repquota/">Repquota</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../resize/">Resize</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../restorecon/">Restorecon</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../restore/">Restore</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rev/">Rev</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rexec/">Rexec</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rlogin/">Rlogin</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rmdir/">Rmdir</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rm/">Rm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rmmod/">Rmmod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../route/">Route</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpm2cpio/">Rpm2cpio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpmbuild/">Rpmbuild</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpmdb/">Rpmdb</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpm/">Rpm</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpmquery/">Rpmquery</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpmsign/">Rpmsign</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rpmverify/">Rpmverify</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rsh/">Rsh</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rsync/">Rsync</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../runlevel/">Runlevel</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sar/">Sar</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../scp/">Scp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../screen/">Screen</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Sed</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#sed">sed</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">补充说明</a></li>
+        
+            <li><a class="toctree-l3" href="#sed_1">sed的选项、命令、替换标记</a></li>
+        
+            <li><a class="toctree-l3" href="#sed_5">sed用法实例</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../seinfo/">Seinfo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../semanage/">Semanage</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sendmail/">Sendmail</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../seq/">Seq</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../service/">Service</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sesearch/">Sesearch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../setfacl/">Setfacl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../set/">Set</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../setpci/">Setpci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../setsebool/">Setsebool</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../setsid/">Setsid</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sftp/">Sftp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sftp-server/">Sftp server</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sh/">Sh</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../shopt/">Shopt</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../showmount/">Showmount</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../shutdown/">Shutdown</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../skill/">Skill</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../slabtop/">Slabtop</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sleep/">Sleep</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../slocate/">Slocate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../smbclient/">Smbclient</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../smbpasswd/">Smbpasswd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sort/">Sort</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../source/">Source</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../speedtest-cli/">Speedtest cli</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../spell/">Spell</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../split/">Split</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../squidclient/">Squidclient</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../squid/">Squid</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh-add/">Ssh add</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh-agent/">Ssh agent</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh-copy-id/">Ssh copy id</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sshd/">Sshd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh-keygen/">Ssh keygen</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh-keyscan/">Ssh keyscan</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh/">Ssh</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ss/">Ss</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../startx/">Startx</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../stat/">Stat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../strace/">Strace</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../strings/">Strings</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../stty/">Stty</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sudo/">Sudo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../su/">Su</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sum/">Sum</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../supervisord/">Supervisord</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../swapoff/">Swapoff</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../swapon/">Swapon</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sync/">Sync</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sysctl/">Sysctl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../syslog/">Syslog</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../systemctl/">Systemctl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../systool/">Systool</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tac/">Tac</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tailf/">Tailf</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tail/">Tail</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../talk/">Talk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tar/">Tar</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tcpdump/">Tcpdump</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tcpreplay/">Tcpreplay</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tee/">Tee</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../telint/">Telint</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../telnet/">Telnet</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tempfile/">Tempfile</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../test/">Test</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tftp/">Tftp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../time/">Time</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tload/">Tload</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tmux/">Tmux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../top/">Top</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../touch/">Touch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tput/">Tput</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tracepath/">Tracepath</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traceroute/">Traceroute</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../trap/">Trap</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tree/">Tree</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tr/">Tr</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tty/">Tty</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../type/">Type</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ulimit/">Ulimit</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../umask/">Umask</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../umount/">Umount</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unalias/">Unalias</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../uname/">Uname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unarj/">Unarj</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../uncompress/">Uncompress</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unexpand/">Unexpand</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../uniq/">Uniq</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unlink/">Unlink</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unprotoize/">Unprotoize</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unset/">Unset</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../unzip/">Unzip</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../updatedb/">Updatedb</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../uptime/">Uptime</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../useradd/">Useradd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../userdel/">Userdel</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usermod/">Usermod</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usernetctl/">Usernetctl</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../users/">Users</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../uucico/">Uucico</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../uupick/">Uupick</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vdfuse/">Vdfuse</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgchange/">Vgchange</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgconvert/">Vgconvert</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgcreate/">Vgcreate</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgdisplay/">Vgdisplay</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgextend/">Vgextend</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgreduce/">Vgreduce</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgremove/">Vgremove</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgrename/">Vgrename</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vgscan/">Vgscan</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vi/">Vi</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vmstat/">Vmstat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../volname/">Volname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../wait/">Wait</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../wall/">Wall</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../watch/">Watch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../wc/">Wc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../wget/">Wget</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../whatis/">Whatis</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../whereis/">Whereis</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../which/">Which</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../whoami/">Whoami</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../who/">Who</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../w/">W</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../write/">Write</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xargs/">Xargs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xauth/">Xauth</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xclip/">Xclip</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xhost/">Xhost</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xinit/">Xinit</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xlsatoms/">Xlsatoms</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xlsclients/">Xlsclients</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xlsfonts/">Xlsfonts</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xset/">Xset</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../xz/">Xz</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../yes/">Yes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ypdomainname/">Ypdomainname</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../yum/">Yum</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../zcat/">Zcat</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../zfore/">Zfore</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../zipinfo/">Zipinfo</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../zip/">Zip</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../zipsplit/">Zipsplit</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../znew/">Znew</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">linux-command</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Sed</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="sed">sed</h1>
+<p>功能强大的流式文本编辑器</p>
+<h2 id="_1">补充说明</h2>
+<p><strong>sed</strong> 是一种流编辑器，它是文本处理中非常中的工具，能够完美的配合正则表达式使用，功能不同凡响。处理时，把当前处理的行存储在临时缓冲区中，称为“模式空间”（pattern space），接着用sed命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。接着处理下一行，这样不断重复，直到文件末尾。文件内容并没有 改变，除非你使用重定向存储输出。Sed主要用来自动编辑一个或多个文件；简化对文件的反复操作；编写转换程序等。</p>
+<h2 id="sed_1">sed的选项、命令、替换标记</h2>
+<p><strong>命令格式</strong> </p>
+<pre><code>sed [options] 'command' file(s)
+sed [options] -f scriptfile file(s)
+</code></pre>
+
+<h3 id="_2">选项</h3>
+<pre><code>-e&lt;script&gt;或--expression=&lt;script&gt;：以选项中的指定的script来处理输入的文本文件；
+-f&lt;script文件&gt;或--file=&lt;script文件&gt;：以选项中指定的script文件来处理输入的文本文件；
+-h或--help：显示帮助；
+-n或--quiet或——silent：仅显示script处理后的结果；
+-V或--version：显示版本信息。
+</code></pre>
+
+<h3 id="_3">参数</h3>
+<p>文件：指定待处理的文本文件列表。</p>
+<h3 id="sed_2">sed命令</h3>
+<pre><code class="bash">a\ # 在当前行下面插入文本。
+i\ # 在当前行上面插入文本。
+c\ # 把选定的行改为新的文本。
+d # 删除，删除选择的行。
+D # 删除模板块的第一行。
+s # 替换指定字符
+h # 拷贝模板块的内容到内存中的缓冲区。
+H # 追加模板块的内容到内存中的缓冲区。
+g # 获得内存缓冲区的内容，并替代当前模板块中的文本。
+G # 获得内存缓冲区的内容，并追加到当前模板块文本的后面。
+l # 列表不能打印字符的清单。
+n # 读取下一个输入行，用下一个命令处理新的行而不是用第一个命令。
+N # 追加下一个输入行到模板块后面并在二者间嵌入一个新行，改变当前行号码。
+p # 打印模板块的行。
+P # (大写) 打印模板块的第一行。
+q # 退出Sed。
+b lable # 分支到脚本中带有标记的地方，如果分支不存在则分支到脚本的末尾。
+r file # 从file中读行。
+t label # if分支，从最后一行开始，条件一旦满足或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾。
+T label # 错误分支，从最后一行开始，一旦发生错误或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾。
+w file # 写并追加模板块到file末尾。  
+W file # 写并追加模板块的第一行到file末尾。  
+! # 表示后面的命令对所有没有被选定的行发生作用。  
+= # 打印当前行号码。  
+# # 把注释扩展到下一个换行符以前。  
+</code></pre>
+
+<h3 id="sed_3">sed替换标记</h3>
+<pre><code class="bash">g # 表示行内全面替换。  
+p # 表示打印行。  
+w # 表示把行写入一个文件。  
+x # 表示互换模板块中的文本和缓冲区中的文本。  
+y # 表示把一个字符翻译为另外的字符（但是不用于正则表达式）
+\1 # 子串匹配标记
+&amp; # 已匹配字符串标记
+</code></pre>
+
+<h3 id="sed_4">sed元字符集</h3>
+<pre><code class="bash">^ # 匹配行开始，如：/^sed/匹配所有以sed开头的行。
+$ # 匹配行结束，如：/sed$/匹配所有以sed结尾的行。
+. # 匹配一个非换行符的任意字符，如：/s.d/匹配s后接一个任意字符，最后是d。
+** # 匹配0个或多个字符，如：/*sed/匹配所有模板是一个或多个空格后紧跟sed的行。
+[] # 匹配一个指定范围内的字符，如/[ss]ed/匹配sed和Sed。  
+[^] # 匹配一个不在指定范围内的字符，如：/[^A-RT-Z]ed/匹配不包含A-R和T-Z的一个字母开头，紧跟ed的行。
+\(..\) # 匹配子串，保存匹配的字符，如s/\(love\)able/\1rs，loveable被替换成lovers。
+&amp; # 保存搜索字符用来替换其他字符，如s/love/ **&amp;** /，love这成 **love** 。
+\&lt; # 匹配单词的开始，如:/\&lt;love/匹配包含以love开头的单词的行。
+\&gt; # 匹配单词的结束，如/love\&gt;/匹配包含以love结尾的单词的行。
+x\{m\} # 重复字符x，m次，如：/0\{5\}/匹配包含5个0的行。
+x\{m,\} # 重复字符x，至少m次，如：/0\{5,\}/匹配至少有5个0的行。
+x\{m,n\} # 重复字符x，至少m次，不多于n次，如：/0\{5,10\}/匹配5~10个0的行。  
+</code></pre>
+
+<h2 id="sed_5">sed用法实例</h2>
+<h3 id="s">替换操作：s命令</h3>
+<p>替换文本中的字符串：</p>
+<pre><code>sed 's/book/books/' file
+</code></pre>
+
+<p><strong>-n选项</strong> 和 <strong>p命令</strong> 一起使用表示只打印那些发生替换的行：</p>
+<p>sed -n 's/test/TEST/p' file</p>
+<p>直接编辑文件 <strong>选项-i</strong> ，会匹配file文件中每一行的第一个book替换为books：</p>
+<pre><code>sed -i 's/book/books/g' file
+</code></pre>
+
+<h3 id="g">全面替换标记g</h3>
+<p>使用后缀 /g 标记会替换每一行中的所有匹配：</p>
+<pre><code>sed 's/book/books/g' file
+</code></pre>
+
+<p>当需要从第N处匹配开始替换时，可以使用 /Ng：</p>
+<pre><code>echo sksksksksksk | sed 's/sk/SK/2g'
+skSKSKSKSKSK
+
+echo sksksksksksk | sed 's/sk/SK/3g'
+skskSKSKSKSK
+
+echo sksksksksksk | sed 's/sk/SK/4g'
+skskskSKSKSK
+</code></pre>
+
+<h3 id="_4">定界符</h3>
+<p>以上命令中字符 / 在sed中作为定界符使用，也可以使用任意的定界符：</p>
+<pre><code>sed 's:test:TEXT:g'
+sed 's|test|TEXT|g'
+</code></pre>
+
+<p>定界符出现在样式内部时，需要进行转义：</p>
+<pre><code>sed 's/\/bin/\/usr\/local\/bin/g'
+</code></pre>
+
+<h3 id="d">删除操作：d命令</h3>
+<p>删除空白行：</p>
+<pre><code>sed '/^$/d' file
+</code></pre>
+
+<p>删除文件的第2行：</p>
+<pre><code>sed '2d' file
+</code></pre>
+
+<p>删除文件的第2行到末尾所有行：</p>
+<pre><code>sed '2,$d' file
+</code></pre>
+
+<p>删除文件最后一行：</p>
+<pre><code>sed '$d' file
+</code></pre>
+
+<p>删除文件中所有开头是test的行：</p>
+<pre><code>sed '/^test/'d file
+</code></pre>
+
+<h3 id="_5">已匹配字符串标记&amp;</h3>
+<p>正则表达式 \w+ 匹配每一个单词，使用 [&amp;] 替换它，&amp; 对应于之前所匹配到的单词：</p>
+<pre><code>echo this is a test line | sed 's/\w\+/[&amp;]/g'
+[this] [is] [a] [test] [line]
+</code></pre>
+
+<p>所有以192.168.0.1开头的行都会被替换成它自已加localhost：</p>
+<pre><code>sed 's/^192.168.0.1/&amp;localhost/' file
+192.168.0.1localhost
+</code></pre>
+
+<h3 id="1">子串匹配标记\1</h3>
+<p>匹配给定样式的其中一部分：</p>
+<pre><code>echo this is digit 7 in a number | sed 's/digit \([0-9]\)/\1/'
+this is 7 in a number
+</code></pre>
+
+<p>命令中 digit 7，被替换成了 7。样式匹配到的子串是 7，(..) 用于匹配子串，对于匹配到的第一个子串就标记为  <strong>\1</strong> ，依此类推匹配到的第二个结果就是  <strong>\2</strong> ，例如：</p>
+<pre><code>echo aaa BBB | sed 's/\([a-z]\+\) \([A-Z]\+\)/\2 \1/'
+BBB aaa
+</code></pre>
+
+<p>love被标记为1，所有loveable会被替换成lovers，并打印出来：</p>
+<pre><code>sed -n 's/\(love\)able/\1rs/p' file
+</code></pre>
+
+<h3 id="_6">组合多个表达式</h3>
+<pre><code>sed '表达式' | sed '表达式'
+
+等价于：
+
+sed '表达式; 表达式'
+</code></pre>
+
+<h3 id="_7">引用</h3>
+<p>sed表达式可以使用单引号来引用，但是如果表达式内部包含变量字符串，就需要使用双引号。</p>
+<pre><code>test=hello
+echo hello WORLD | sed &quot;s/$test/HELLO&quot;
+HELLO WORLD
+</code></pre>
+
+<h3 id="_8">选定行的范围：,（逗号）</h3>
+<p>所有在模板test和check所确定的范围内的行都被打印：</p>
+<pre><code>sed -n '/test/,/check/p' file
+</code></pre>
+
+<p>打印从第5行开始到第一个包含以test开始的行之间的所有行：</p>
+<pre><code>sed -n '5,/^test/p' file
+</code></pre>
+
+<p>对于模板test和west之间的行，每行的末尾用字符串aaa bbb替换：</p>
+<pre><code>sed '/test/,/west/s/$/aaa bbb/' file
+</code></pre>
+
+<h3 id="e">多点编辑：e命令</h3>
+<p>-e选项允许在同一行里执行多条命令：</p>
+<pre><code>sed -e '1,5d' -e 's/test/check/' file
+</code></pre>
+
+<p>上面sed表达式的第一条命令删除1至5行，第二条命令用check替换test。命令的执行顺序对结果有影响。如果两个命令都是替换命令，那么第一个替换命令将影响第二个替换命令的结果。</p>
+<p>和 -e 等价的命令是 --expression：</p>
+<pre><code>sed --expression='s/test/check/' --expression='/love/d' file
+</code></pre>
+
+<h3 id="r">从文件读入：r命令</h3>
+<p>file里的内容被读进来，显示在与test匹配的行后面，如果匹配多行，则file的内容将显示在所有匹配行的下面：</p>
+<pre><code>sed '/test/r file' filename
+</code></pre>
+
+<h3 id="w">写入文件：w命令</h3>
+<p>在example中所有包含test的行都被写入file里：</p>
+<pre><code>sed -n '/test/w file' example
+</code></pre>
+
+<h3 id="a">追加（行下）：a\命令</h3>
+<p>将 this is a test line 追加到 以test 开头的行后面：</p>
+<pre><code>sed '/^test/a\this is a test line' file
+</code></pre>
+
+<p>在 test.conf 文件第2行之后插入 this is a test line：</p>
+<pre><code>sed -i '2a\this is a test line' test.conf
+</code></pre>
+
+<h3 id="i">插入（行上）：i\命令</h3>
+<p>将 this is a test line 追加到以test开头的行前面：</p>
+<pre><code>sed '/^test/i\this is a test line' file
+</code></pre>
+
+<p>在test.conf文件第5行之前插入this is a test line：</p>
+<pre><code>sed -i '5i\this is a test line' test.conf
+</code></pre>
+
+<h3 id="n">下一个：n命令</h3>
+<p>如果test被匹配，则移动到匹配行的下一行，替换这一行的aa，变为bb，并打印该行，然后继续：</p>
+<pre><code>sed '/test/{ n; s/aa/bb/; }' file
+</code></pre>
+
+<h3 id="y">变形：y命令</h3>
+<p>把1~10行内所有abcde转变为大写，注意，正则表达式元字符不能使用这个命令：</p>
+<pre><code>sed '1,10y/abcde/ABCDE/' file
+</code></pre>
+
+<h3 id="q">退出：q命令</h3>
+<p>打印完第10行后，退出sed</p>
+<pre><code>sed '10q' file
+</code></pre>
+
+<h3 id="hg">保持和获取：h命令和G命令</h3>
+<p>在sed处理文件的时候，每一行都被保存在一个叫模式空间的临时缓冲区中，除非行被删除或者输出被取消，否则所有被处理的行都将 打印在屏幕上。接着模式空间被清空，并存入新的一行等待处理。</p>
+<pre><code>sed -e '/test/h' -e '$G' file
+</code></pre>
+
+<p>在这个例子里，匹配test的行被找到后，将存入模式空间，h命令将其复制并存入一个称为保持缓存区的特殊缓冲区内。第二条语句的意思是，当到达最后一行后，G命令取出保持缓冲区的行，然后把它放回模式空间中，且追加到现在已经存在于模式空间中的行的末尾。在这个例子中就是追加到最后一行。简单来说，任何包含test的行都被复制并追加到该文件的末尾。</p>
+<h3 id="hx">保持和互换：h命令和x命令</h3>
+<p>互换模式空间和保持缓冲区的内容。也就是把包含test与check的行互换：</p>
+<pre><code>sed -e '/test/h' -e '/check/x' file
+</code></pre>
+
+<h3 id="scriptfile">脚本scriptfile</h3>
+<p>sed脚本是一个sed的命令清单，启动Sed时以-f选项引导脚本文件名。Sed对于脚本中输入的命令非常挑剔，在命令的末尾不能有任何空白或文本，如果在一行中有多个命令，要用分号分隔。以#开头的行为注释行，且不能跨行。</p>
+<pre><code>sed [options] -f scriptfile file(s)
+</code></pre>
+
+<h3 id="_9">打印奇数行或偶数行</h3>
+<p>方法1：</p>
+<pre><code>sed -n 'p;n' test.txt  #奇数行
+sed -n 'n;p' test.txt  #偶数行
+
+</code></pre>
+
+<p>方法2：</p>
+<pre><code>sed -n '1~2p' test.txt  #奇数行
+sed -n '2~2p' test.txt  #偶数行
+
+</code></pre>
+
+<h3 id="_10">打印匹配字符串的下一行</h3>
+<pre><code>grep -A 1 SCC URFILE
+sed -n '/SCC/{n;p}' URFILE
+awk '/SCC/{getline; print}' URFILE
+
+</code></pre>
+
+<!-- Linux命令行搜索引擎：https://jaywcjlove.github.io/linux-command/ -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../seinfo/" class="btn btn-neutral float-right" title="Seinfo">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../screen/" class="btn btn-neutral" title="Screen"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../screen/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../seinfo/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
